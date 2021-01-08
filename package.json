@@ -1,0 +1,47 @@
+{
+  "name": "gridjs",
+  "description": "Advanced table plugin",
+  "keywords": [
+    "grid",
+    "table",
+    "gridjs",
+    "list",
+    "filter",
+    "search",
+    "sort",
+    "pagination",
+    "react",
+    "angular",
+    "jquery"
+  ],
+  "homepage": "https://gridjs.io",
+  "repository": "https://github.com/grid-js/gridjs",
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "prettier": "~2.2.1"
+  },
+  "scripts": {
+    "prettier": "prettier --ignore-path dist --write 'packages/**/*.(ts|js|scss|css)'",
+    "postinstall": "lerna bootstrap",
+    "clean": "lerna run clean",
+    "build": "lerna run build --stream",
+    "build:watch": "lerna run build:watch --stream --parallel",
+    "lint": "lerna run lint --stream --parallel",
+    "test": "lerna run test --stream --parallel",
+    "test:watch": "lerna run test:watch --stream --parallel"
+  },
+  "author": "Afshin Mehrabani <afshin.meh@gmail.com>",
+  "license": "MIT",
+  "changelog": {
+    "labels": {
+      "new feature": ":rocket: New Feature",
+      "breaking": ":boom: Breaking Change",
+      "bug fix": ":bug: Bug Fix",
+      "polish": ":nail_care: Polish",
+      "documentation": ":memo: Documentation",
+      "internal": ":house: Internal",
+      "performance": ":running_woman: Performance"
+    },
+    "cacheDir": ".changelog"
+  }
+}
